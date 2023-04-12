@@ -1,0 +1,27 @@
+@media (max-width: 991px) {
+  .button {
+    &:hover {
+      background: $main-color;
+    }
+  }
+  .promo {
+    min-height: 572px;
+    padding: 21px 8px 30px 8px;
+    &__wrapper {
+      margin-top: 75px;
+    }
+    &__header {
+      font-size: 38px;
+    }
+    &__subheader {
+      font-size: 21.3px;
+    }
+  }
+  .advantages {
+    min-height: 438px;
+    padding: 60px 8px 30px 8px;
+    &__column {
+      width: 250px;
+    }
+  }
+}
