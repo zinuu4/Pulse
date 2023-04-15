@@ -96,7 +96,6 @@
     }
   }
   .carousel {
-    padding: 25px 0;
     &__inner {
       width: 80%;
       img {
@@ -111,6 +110,36 @@
     }
     .slick-dots ul {
       display: none;
+    }
+  }
+
+  .catalog {
+    padding: 0 0 20px 0;
+    &__title {
+      font-size: 28px;
+    }
+    &__content {
+      margin-top: 40px;
+    }
+    &__tabs {
+      margin-top: 40px;
+    }
+    &__tab {
+      width: 220px;
+      margin-left: 0;
+      margin-right: 0;
+    }
+    &__tab:nth-child(1) {
+      margin: 0 0 5px 0;
+    }
+    &__tab:nth-child(2) {
+      margin: 0 0 5px 0;
+    }
+    &__content {
+      transform: translateX(0);
+    }
+    &-item {
+      margin-right: 0;
     }
   }
 }

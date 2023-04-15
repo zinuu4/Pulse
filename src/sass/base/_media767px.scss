@@ -73,7 +73,7 @@
   }
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
   .consultation {
-    padding: 60px 8px 60px 8px;
+    padding: 45px 8px 45px 8px;
     min-height: 450px;
     &__title {
       font-size: 30px;
@@ -83,7 +83,6 @@
     }
   }
   .carousel {
-    padding: 45px 0;
     &__inner {
       width: 80%;
       padding-right: 8px;
@@ -97,6 +96,32 @@
     .slick-dots li button {
       width: 40px;
       height: 40px;
+    }
+  }
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  .catalog {
+    padding: 0 0 30px 0;
+    &__content {
+      margin-top: 45px;
+    }
+    &__tabs {
+      margin-top: 50px;
+      flex-direction: column;
+    }
+    &__tab {
+      width: 270px;
+    }
+    &__tab:nth-child(1) {
+      margin: 0 0 5px 0;
+    }
+    &__tab:nth-child(2) {
+      margin: 0 0 5px 0;
+    }
+    &-item {
+      margin-right: 0;
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
     }
   }
 }
