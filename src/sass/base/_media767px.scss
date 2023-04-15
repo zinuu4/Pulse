@@ -117,11 +117,21 @@
     &__tab:nth-child(2) {
       margin: 0 0 5px 0;
     }
-    &-item {
-      margin-right: 0;
-      &:nth-child(3n) {
-        margin-right: 0;
-      }
+  }
+
+  .reviews {
+    padding: 0 8px 35px 8px;
+    &__title {
+      font-size: 25px;
+    }
+    &__review-block {
+      flex-direction: column;
+    }
+    &__img {
+      margin-right: 0px;
+    }
+    &__name {
+      margin-top: 25px;
     }
   }
 }
