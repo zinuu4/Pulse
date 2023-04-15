@@ -118,7 +118,7 @@
       margin: 0 0 5px 0;
     }
   }
-
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
   .reviews {
     padding: 0 8px 35px 8px;
     &__title {
@@ -134,4 +134,40 @@
       margin-top: 25px;
     }
   }
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+.footer {
+  min-height: 350px;
+    iframe {
+      height: 350px;
+    }
+  &__info {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+    height: 210px;
+    background-color: $main-color;
+    padding: 35px 0 0 0;
+  }
+  &__addr {
+    font-size: 18px;
+  }
+  &__phone {
+    margin-top: 25px;
+    font-size: 20px;
+  }
+  &__social {
+    margin-top: 25px;
+    a {
+      text-decoration: none;
+    }
+    a:nth-child(1) {
+      margin-right: 27px;
+    }
+    a:nth-child(2) {
+      margin-right: 27px;
+    }
+  }
+}
 }

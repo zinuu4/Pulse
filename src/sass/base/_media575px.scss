@@ -95,6 +95,7 @@
       font-size: 17px;
     }
   }
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
   .carousel {
     &__inner {
       width: 80%;
@@ -112,7 +113,7 @@
       display: none;
     }
   }
-
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
   .catalog {
     padding: 0 0 20px 0;
     &__title {
@@ -139,4 +140,40 @@
       margin-right: 0;
     }
   }
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+.footer {
+  min-height: 300px;
+    iframe {
+      height: 300px;
+    }
+  &__info {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 280px;
+    height: 160px;
+    background-color: $main-color;
+    padding: 15px 0 0 0;
+  }
+  &__addr {
+    font-size: 13px;
+  }
+  &__phone {
+    margin-top: 18px;
+    font-size: 16px;
+  }
+  &__social {
+    margin-top: 18px;
+    a {
+      text-decoration: none;
+    }
+    a:nth-child(1) {
+      margin-right: 10px;
+    }
+    a:nth-child(2) {
+      margin-right: 10px;
+    }
+  }
+}
 }
