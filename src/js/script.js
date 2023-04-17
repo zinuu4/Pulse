@@ -4,8 +4,8 @@ $(document).ready(function(){
     adaptiveHeight: true,
     // autoplay: true,
     autoplaySpeed: 2000,
-    prevArrow: '<button type="button" class="slick-prev"><img src="../icons/left.svg"></button>',
-    nextArrow: '<button type="button" class="slick-next"><img src="../icons/right.svg"></button>',
+    prevArrow: '<button type="button" class="slick-prev"><img src="icons/left.svg"></button>',
+    nextArrow: '<button type="button" class="slick-next"><img src="icons/right.svg"></button>',
     responsive: [
       {
         breakpoint: 992,
@@ -52,7 +52,6 @@ $(document).ready(function(){
   });
 
   // Validation
-  
   function validateForms(form) {
     $(form).validate({
       rules: {
@@ -85,5 +84,26 @@ $(document).ready(function(){
   validateForms('#order form');
 
   // Number mask
-  $('input[name=phone]').mask("+380 (99) 999-99-99");
+  $('input[name=phone]').mask('+380 (99) 999-99-99');
+
+  $('form').submit(function(e) {
+    e.preventDefault();
+
+    if (!$(this).valid()) {
+      return;
+    }
+
+    $.ajax({
+      type: "POST",
+      url: "mailer/smart.php",
+      data: $(this).serialize()
+    }).done(function() {
+      $(this).find("input").val("");
+      $('#consultation, #order').fadeOut();
+      $('.overlay, #thanks').fadeIn('slow');
+
+      $('form').trigger('reset');
+    });
+    return false;
+  });
 });
