@@ -62,5 +62,11 @@
     iframe {
       height: 450px;
     }
+    &__social {
+      a:hover {
+          box-shadow: none;
+          border: 2px solid #FFFFFF;
+      } 
+    }
   }
 }

@@ -60,6 +60,11 @@
     overflow: hidden;
     margin-bottom: 15px;
     margin-right: 15px;
+    transform: translateX(10px);
+    @media (max-width: 600px) {
+      transform: translateX(0);
+      margin-right: 0;
+    }
     &__img {
       display: block;
       margin: 0 auto;
