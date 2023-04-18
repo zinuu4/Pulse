@@ -120,7 +120,7 @@ $(document).ready(function(){
   //   $("html, body").animate({scrollTop: $(_href).offset().top+"-x"});
   //   return false;
   // });
-  $("a").on('click', function(event) {
+  $("a[href=#up]").on('click', function(event) {
 
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
