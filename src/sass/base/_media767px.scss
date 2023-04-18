@@ -136,7 +136,7 @@
     &__title {
       font-size: 25px;
     }
-    &__review-block {
+    &__item {
       flex-direction: column;
     }
     &__img {
@@ -210,5 +210,9 @@
     align-items: center;
     min-height: 120px;
   }
+}
+.pageup {
+  bottom: 20px;
+  right: 20px;
 }
 }

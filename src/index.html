@@ -8,11 +8,11 @@
   <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-
-  <section class="promo">
+  <section id="up" class="promo">
     <div class="container">
       <header class="header">
         <a href="#" class="header__logo">
@@ -59,21 +59,21 @@
       <h2 class="advantages__title">НАШИ ПРЕИМУЩЕСТВА</h2>
       <div class="advantages__columns">
         <div class="advantages__column">
-          <div class="advantages__icon">
+          <div class="advantages__icon animate__animated animate__tada wow" data-wow-delay="0.5s">
             <img src="icons/advantages-cup.svg" alt="cup">
           </div>
           <div class="advantages__subtitle">Делимся опытом</div>
           <div class="advantages__text">Наши сотрудники всегда готовы поделиться своим опытом, так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!</div>
         </div>
         <div class="advantages__column">
-          <div class="advantages__icon">
+          <div class="advantages__icon advantages__icon_animated">
             <img src="icons/advantages-heart.svg" alt="heart">
           </div>
           <div class="advantages__subtitle">Заботимся о здоровье</div>
           <div class="advantages__text">Мы работаем для того, чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!</div>
         </div>
         <div class="advantages__column">
-          <div class="advantages__icon">
+          <div class="advantages__icon animate__animated animate__tada wow" data-wow-delay="0.5s">
             <img src="icons/advantages-shoe.svg" alt="shoe">
           </div>
           <div class="advantages__subtitle">Учим бегать</div>
@@ -84,7 +84,7 @@
     </div>
   </section>
 
-  <section class="consultation">
+  <section class="consultation animate__animated animate__fadeInRight wow" data-wow-duration="1.5s" data-wow-delay="0.2s">
     <div class="container">
       <h2 class="consultation__title">
         Получите бесплатную консультацию<br> 
@@ -130,7 +130,7 @@
       </ul>
   
       <div class="catalog__content catalog__content_active">
-        <div class="catalog-item">
+        <div class="catalog-item animate__animated animate__fadeInUp wow" data-wow-duration="0.5s" data-wow-delay="1s">
           <div class="catalog-item__wrapper">
             <div class="catalog-item__content catalog-item__content_active">
               <img src="img/pulsometr.png" alt="pulsometr" class="catalog-item__img">
@@ -157,7 +157,7 @@
           </div>
 
         </div>
-        <div class="catalog-item">
+        <div class="catalog-item animate__animated animate__fadeInUp wow" data-wow-duration="1s" data-wow-delay="1s"">
           <div class="catalog-item__wrapper">
             <div class="catalog-item__content catalog-item__content_active">
               <img src="img/pulsometr.png" alt="pulsometr" class="catalog-item__img">
@@ -184,7 +184,7 @@
           </div>
 
         </div>
-        <div class="catalog-item">
+        <div class="catalog-item animate__animated animate__fadeInUp wow" data-wow-duration="1.5s" data-wow-delay="1s">
           <div class="catalog-item__wrapper">
             <div class="catalog-item__content catalog-item__content_active">
               <img src="img/pulsometr.png" alt="pulsometr" class="catalog-item__img">
@@ -211,7 +211,7 @@
           </div>
 
         </div>
-        <div class="catalog-item">
+        <div class="catalog-item animate__animated animate__fadeInUp wow" data-wow-duration="2s" data-wow-delay="1s">
           <div class="catalog-item__wrapper">
             <div class="catalog-item__content catalog-item__content_active">
               <img src="img/pulsometr.png" alt="pulsometr" class="catalog-item__img">
@@ -238,7 +238,7 @@
           </div>
 
         </div>
-        <div class="catalog-item">
+        <div class="catalog-item animate__animated animate__fadeInUp wow" data-wow-duration="2.5s" data-wow-delay="1s">
           <div class="catalog-item__wrapper">
             <div class="catalog-item__content catalog-item__content_active">
               <img src="img/pulsometr.png" alt="pulsometr" class="catalog-item__img">
@@ -265,7 +265,7 @@
           </div>
 
         </div>
-        <div class="catalog-item">
+        <div class="catalog-item animate__animated animate__fadeInUp wow" data-wow-duration="3s" data-wow-delay="1s">
           <div class="catalog-item__wrapper">
             <div class="catalog-item__content catalog-item__content_active">
               <img src="img/pulsometr.png" alt="pulsometr" class="catalog-item__img">
@@ -294,7 +294,61 @@
         </div>
       </div>
       <div class="catalog__content">
-        <div class="catalog-item">
+        <div class="catalog-item animate__animated animate__fadeInUp wow" data-wow-duration="0.5s" data-wow-delay="1s">
+          <div class="catalog-item__wrapper">
+            <div class="catalog-item__content catalog-item__content_active">
+              <img src="img/pulsometr.png" alt="pulsometr" class="catalog-item__img">
+              <div class="catalog-item__subtitle">Пульсометр Polar BG3</div>
+              <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
+              <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
+            </div>
+            <ul class="catalog-item__list">
+              <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
+              <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
+              <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
+              <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
+              <a href="#" class="catalog-item__back">назад</a>
+            </ul>
+          </div>
+          <hr>
+
+          <div class="catalog-item__footer">
+            <div class="catalog-item__prices">
+              <div class="catalog-item__old-price">4 750 руб.</div>
+              <div class="catalog-item__price">4 500 руб.</div>
+            </div>
+            <button class="button_catalog-item button">КУПИТЬ</button>
+          </div>
+
+        </div>
+        <div class="catalog-item animate__animated animate__fadeInUp wow" data-wow-duration="1s" data-wow-delay="1s">
+          <div class="catalog-item__wrapper">
+            <div class="catalog-item__content catalog-item__content_active">
+              <img src="img/pulsometr.png" alt="pulsometr" class="catalog-item__img">
+              <div class="catalog-item__subtitle">Пульсометр Polar BG3</div>
+              <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
+              <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
+            </div>
+            <ul class="catalog-item__list">
+              <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
+              <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
+              <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
+              <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
+              <a href="#" class="catalog-item__back">назад</a>
+            </ul>
+          </div>
+          <hr>
+
+          <div class="catalog-item__footer">
+            <div class="catalog-item__prices">
+              <div class="catalog-item__old-price">4 750 руб.</div>
+              <div class="catalog-item__price">4 500 руб.</div>
+            </div>
+            <button class="button_catalog-item button">КУПИТЬ</button>
+          </div>
+
+        </div>
+        <div class="catalog-item animate__animated animate__fadeInUp wow" data-wow-duration="1.5s" data-wow-delay="1s">
           <div class="catalog-item__wrapper">
             <div class="catalog-item__content catalog-item__content_active">
               <img src="img/pulsometr.png" alt="pulsometr" class="catalog-item__img">
@@ -323,7 +377,7 @@
         </div>
       </div>
       <div class="catalog__content">
-        <div class="catalog-item">
+        <div class="catalog-item animate__animated animate__fadeInUp wow" data-wow-duration="0.5s" data-wow-delay="1s">
           <div class="catalog-item__wrapper">
             <div class="catalog-item__content catalog-item__content_active">
               <img src="img/pulsometr.png" alt="pulsometr" class="catalog-item__img">
@@ -350,7 +404,7 @@
           </div>
 
         </div>
-        <div class="catalog-item">
+        <div class="catalog-item animate__animated animate__fadeInUp wow" data-wow-duration="1s" data-wow-delay="1s">
           <div class="catalog-item__wrapper">
             <div class="catalog-item__content catalog-item__content_active">
               <img src="img/pulsometr.png" alt="pulsometr" class="catalog-item__img">
@@ -384,7 +438,7 @@
     <div class="container">
       <div class="reviews__title">отзывы клиентов</div>
 
-      <div class="reviews__review-block">
+      <div class="reviews__item animate__animated animate__fadeInUp wow" data-wow-duration="2s" data-wow-delay="1s">
         <div class="reviews__img">
           <img src="img/reviews1.png" alt="photo">
         </div>
@@ -396,7 +450,7 @@
         </div>
       </div>
 
-      <div class="reviews__review-block">
+      <div class="reviews__item animate__animated animate__fadeInUp wow" data-wow-duration="2s" data-wow-delay="1s">
         <div class="reviews__img">
           <img src="img/reviews2.png" alt="photo">
         </div>
@@ -407,7 +461,7 @@
         </div>
       </div>
 
-      <div class="reviews__review-block">
+      <div class="reviews__item animate__animated animate__fadeInUp wow" data-wow-duration="2s" data-wow-delay="1s">
         <div class="reviews__img">
           <img src="img/reviews3.png" alt="photo">
         </div>
@@ -421,7 +475,7 @@
     </div>
   </section>
 
-  <footer class="footer">
+  <footer class="footer animate__animated animate__fadeInUp wow" data-wow-duration="1.5s" data-wow-delay="0.2s">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.43048007664!2d37.646996!3d55.768395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a636edcd2ad%3A0x4c2ca101e2c8c617!2sMyasnitskiy%20Proyezd%2C%204%2F3%2C%20Moskva%2C%20Russia%2C%20107078!5e0!3m2!1sen!2sua!4v1681569119567!5m2!1sen!2sua" width="100%" height="630" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
     <div class="footer__info">
@@ -473,11 +527,16 @@
     </div>
   </div>
 
+  <a href="#up" class="pageup">
+    <img src="icons/chevron-up-circle-svgrepo-com.svg" alt="up">
+  </a>
+
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/wow.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>

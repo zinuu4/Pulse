@@ -1,8 +1,8 @@
 $(document).ready(function(){
   $('.carousel__inner').slick({
     speed: 1200,
-    adaptiveHeight: true,
-    // autoplay: true,
+    adaptiveHeight: false,
+    autoplay: true,
     autoplaySpeed: 2000,
     prevArrow: '<button type="button" class="slick-prev"><img src="icons/left.svg"></button>',
     nextArrow: '<button type="button" class="slick-next"><img src="icons/right.svg"></button>',
@@ -86,13 +86,12 @@ $(document).ready(function(){
   // Number mask
   $('input[name=phone]').mask('+380 (99) 999-99-99');
 
+
   $('form').submit(function(e) {
     e.preventDefault();
-
     if (!$(this).valid()) {
       return;
     }
-
     $.ajax({
       type: "POST",
       url: "mailer/smart.php",
@@ -101,9 +100,48 @@ $(document).ready(function(){
       $(this).find("input").val("");
       $('#consultation, #order').fadeOut();
       $('.overlay, #thanks').fadeIn('slow');
-
       $('form').trigger('reset');
     });
     return false;
   });
+
+  //Smooth scroll and pageup
+
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 1600) {
+      $('.pageup').fadeIn();
+    } else {
+      $('.pageup').fadeOut();
+    }
+  });
+
+  // $("a[href^='#'").click(function() {
+  //   const _href = $(this).attr("href");
+  //   $("html, body").animate({scrollTop: $(_href).offset().top+"-x"});
+  //   return false;
+  // });
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1600, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+
+  //WOW
+  new WOW().init();
 });
